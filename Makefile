@@ -48,9 +48,23 @@ pylint:
 	pylint --recursive y ${SRC_DIR}
 
 # Run tests
-.PHONY: pytest
-pytest:
-	pytest ${TEST_DIR}
+.PHONY: test test-one test-all
+
+# Run until first failed test
+test-one:
+	pytest -x
+
+# Run debugger on first failed test
+test-debug:
+	pytest -x --pdb
+
+# Run all tests
+test-all:
+	pytest
+
+# Dry-run: collect tests without running them
+test-dry-run:
+	pytest --collect-only
 
 # emacs tags
 ETAG_SRCS := $(shell find * -type f -name '*.py' -o -name '*.md' | grep -v defunct)
