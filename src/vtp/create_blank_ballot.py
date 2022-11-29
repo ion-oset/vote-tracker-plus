@@ -33,9 +33,9 @@ import pprint
 import sys
 
 # Local imports
-from vtp.utils.address import Address
-from vtp.utils.ballot import BlankBallot
-from vtp.utils.election_config import ElectionConfig
+from vtp.core.address import Address
+from vtp.core.ballot import BlankBallot
+from vtp.core.election_config import ElectionConfig
 
 
 ################

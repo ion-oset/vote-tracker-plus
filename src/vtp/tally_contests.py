@@ -34,11 +34,11 @@ import re
 import sys
 
 # Local import
-from vtp.utils.ballot import Ballot
-from vtp.utils.common import Shellout
-from vtp.utils.contest import Tally
-from vtp.utils.election_config import ElectionConfig
-from vtp.utils.exceptions import TallyException
+from vtp.core.ballot import Ballot
+from vtp.core.common import Shellout
+from vtp.core.contest import Tally
+from vtp.core.election_config import ElectionConfig
+from vtp.core.exceptions import TallyException
 
 # Functions
 
